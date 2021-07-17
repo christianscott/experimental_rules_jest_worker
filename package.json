@@ -1,0 +1,26 @@
+{
+    "name": "jest_circus_bazel_test",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@bazel/bazelisk": "latest",
+        "@bazel/buildifier": "latest",
+        "@bazel/ibazel": "latest",
+        "@bazel/typescript": "^3.7.0",
+        "@bazel/worker": "^3.7.0",
+        "jest": "^27.0.6",
+        "jest-config": "^27.0.6",
+        "jest-haste-map": "^27.0.6",
+        "jest-message-util": "^27.0.6",
+        "jest-runtime": "^27.0.6",
+        "source-map-support": "^0.5.19",
+        "typescript": "^4.3.5"
+    },
+    "scripts": {
+        "build": "bazel build //...",
+        "test": "bazel test //..."
+    },
+    "dependencies": {
+        "@jest/reporters": "^27.0.6"
+    }
+}
